@@ -33,12 +33,26 @@ export default class TabsExampleSwipeable extends React.Component {
                     <br />
                     <img className="Tabs-slide1img" src={require("./img/residualgold.jpg")} alt="Residual-Gold" />
                     <h1 className="Tabs-title">Putting your spare change to work</h1>
+                    <br/>
+                    <p>Username</p>
+                    <p>Password</p>
                 </div>
                 <div className="Tabs-slide2">
                     <h1 className="Tabs-title">Here is a quick run down of how it works.</h1>
+                    <div className="Tabs-slide2-columns">
+                        <div className="Tabs-slide2-column1">
+                            <p>You use your debit card</p>
+                        </div>
+                        <div className="Tabs-slide2-column2">
+                            <p>We round every transaction to the nearest dollar</p>
+                        </div>
+                        <div className="Tabs-slide2-column3">
+                        <p>You decide where the change goes</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="Tabs-slide3">
-                    slide n°3
+                    Sign up
                 </div>
             </SwipeableViews>
         </div>

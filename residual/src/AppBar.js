@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+//From http://www.material-ui.com
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
@@ -35,10 +36,6 @@ const Logged = (props) => (
 
 Logged.muiName = 'IconMenu';
 
-/**
- * This example is taking advantage of the composability of the `AppBar`
- * to render different components depending on the application state.
- */
 class AppBarExampleComposition extends Component {
   state = {
     logged: true,

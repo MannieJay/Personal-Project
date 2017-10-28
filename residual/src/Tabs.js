@@ -4,7 +4,7 @@ import { Tabs, Tab } from "material-ui/Tabs";
 import SwipeableViews from "react-swipeable-views";
 import "./Tabs.css";
 
-export default class TabsExampleSwipeable extends React.Component {
+export default class TabsSwipeable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,9 +43,6 @@ export default class TabsExampleSwipeable extends React.Component {
               alt="Residual-Gold"
             />
             <h1 className="Tabs-title">Putting your spare change to work</h1>
-            <br />
-            <p>Username</p>
-            <p>Password</p>
           </div>
           <div className="Tabs-slide2">
             <h1 className="Tabs-title">

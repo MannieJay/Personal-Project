@@ -60,7 +60,7 @@ export default class TabsSwipeable extends React.Component {
               </div>
               <div className="Tabs-slide2-column2">
                 We round your transaction to the nearest dollar
-                <br/>
+                <br />
                 <img
                   className="Tabs-slide2-imgs"
                   src={require("./img/change.png")}
@@ -68,7 +68,9 @@ export default class TabsSwipeable extends React.Component {
                 />
               </div>
               <div className="Tabs-slide2-column3">
-                <div className="Tabs-slide2-column3-text">You decide where your change goes</div>
+                <div className="Tabs-slide2-column3-text">
+                  You decide where your change goes
+                </div>
                 <img
                   className="Tabs-slide2-imgs"
                   src={require("./img/Car-Made-of-Money.png")}

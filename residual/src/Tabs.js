@@ -59,7 +59,7 @@ export default class TabsSwipeable extends React.Component {
                 />
               </div>
               <div className="Tabs-slide2-column2">
-                We round your transaction to the nearest dollar
+                Your purchases are rounded to the nearest dollar
                 <br />
                 <img
                   className="Tabs-slide2-imgs"
@@ -69,7 +69,7 @@ export default class TabsSwipeable extends React.Component {
               </div>
               <div className="Tabs-slide2-column3">
                 <div className="Tabs-slide2-column3-text">
-                  You decide where your change goes
+                  Decide where your money goes
                 </div>
                 <img
                   className="Tabs-slide2-imgs"

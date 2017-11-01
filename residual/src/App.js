@@ -3,30 +3,12 @@ import React, { Component } from "react";
 import "./App.css";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 //import MyAwesomeReactComponent from './AppBar';
-import TabsSwipeable from "./Tabs";
-import LoginForm from "./login.js";
-import Welcome from "./loggedin.js";
+import TabsSwipeable from "./components/Tabs";
+//import { createStore } from "redux";
+import LoginApp from "./components/loginapp.js";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: null
-    };
-  }
 
-  signIn(username, password) {
-    this.setState({
-      user: {
-        username,
-        password
-      }
-    });
-  }
-
-  signOut() {
-    this.setState({ user: null });
-  }
 
   render() {
     return (
@@ -36,16 +18,7 @@ class App extends Component {
             <TabsSwipeable />
           </MuiThemeProvider>
         </header>
-        <div>
-          {this.state.user ? (
-            <Welcome
-              user={this.state.user}
-              onSignOut={this.signOut.bind(this)}
-            />
-          ) : (
-            <LoginForm onSignIn={this.signIn.bind(this)} />
-          )}
-        </div>
+          <LoginApp />
       </div>
     );
   }

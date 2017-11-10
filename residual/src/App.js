@@ -1,15 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import { Route } from "react-router";
 //import logo from './logo.svg';
 import "./App.css";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 //import MyAwesomeReactComponent from './AppBar';
 import TabsSwipeable from "./components/Tabs";
-//import { createStore } from "redux";
-import LoginApp from "./components/loginapp.js";
 
-class App extends Component {
+import LoginPage from "./components/login/LoginPage";
+import WelcomePage from "./components/welcome/WelcomePage";
 
-
+class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -18,7 +18,8 @@ class App extends Component {
             <TabsSwipeable />
           </MuiThemeProvider>
         </header>
-          <LoginApp />
+          <Route path="/" component={LoginPage} />
+          <Route path="/welcome" component={WelcomePage} />
       </div>
     );
   }

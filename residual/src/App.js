@@ -1,13 +1,14 @@
 import React from "react";
-import { Route } from "react-router";
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './components/routes/routes';
+// import LoginPage from "./components/login/LoginPage";
+// import WelcomePage from "./components/welcome/WelcomePage";
 //import logo from './logo.svg';
 import "./App.css";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 //import MyAwesomeReactComponent from './AppBar';
 import TabsSwipeable from "./components/Tabs";
 
-import LoginPage from "./components/login/LoginPage";
-import WelcomePage from "./components/welcome/WelcomePage";
 
 class App extends React.Component {
   render() {
@@ -17,9 +18,10 @@ class App extends React.Component {
           <MuiThemeProvider>
             <TabsSwipeable />
           </MuiThemeProvider>
-        </header>
-          <Route path="/" component={LoginPage} />
-          <Route path="/welcome" component={WelcomePage} />
+        </header>  
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
       </div>
     );
   }

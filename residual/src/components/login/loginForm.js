@@ -13,6 +13,7 @@ class LoginForm extends Component {
       password: ""
     };
   }
+  
 
   onChangeUser = e => {
     this.setState({ ...this.state, username: e.target.value });
@@ -25,7 +26,7 @@ class LoginForm extends Component {
   onSubmit = e => {
     e.preventDefault();
 
-    console.log('---state onSubmit---', this.state);
+    console.log('---state onSubmit---', this.props.actions);
 
     this.props.actions.login(this.state);
   };

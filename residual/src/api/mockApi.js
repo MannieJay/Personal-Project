@@ -1,23 +1,22 @@
-import _ from 'lodash';
+import _ from "lodash";
 
 const users = [
-    {
-        id: 1,
-        username: 'mannie@ls.com',
-        password: 'password',
-    }
+  {
+    id: 1,
+    username: "a",
+    password: "a"
+  }
 ];
 
 export function authenticate(username, password) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-        let user = _.find(users, user => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let user = _.find(users, user => {
         return user.username === username;
-    });
-    if(user && user.password === password) {
+      });
+      if (user && user.password === password) {
         resolve(Object.assign({}, user));
-    }
-    else reject(`Wrong login credentials`);
-        }, 500);
-    });
+      } else reject(`Wrong login credentials`);
+    }, 500);
+  });
 }

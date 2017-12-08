@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
 
 class WelcomePage extends Component {
   render() {
@@ -13,4 +14,10 @@ class WelcomePage extends Component {
   }
 }
 
-export default WelcomePage;
+function mapStateToProps(state) {
+  return {
+      login: state.login
+  }
+}
+
+export default connect(mapStateToProps)(WelcomePage);
